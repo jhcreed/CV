@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=10in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings %%% textheight was = 8.5
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize \raise .3ex\hbox{#1}}} % New command for including margin years %%%I added the \raise and \hbox commands to make the vertical alignment better
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the content
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Jordan Creed - CV},pdfauthor={Jordan Creed}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+\usepackage{textpos} %%%for positioning text box in the upper right corner
+
+\usepackage{enumitem} %%%for adjusting indent in enumerate environment
+
+\usepackage{longtable}
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Hoefler Text Font (bundled with Mac OSX)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+\sectionfont{\rmfamily\mdseries\scshape\normalsize\underline} % Set font options for sections as subsections %%%
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{textblock*}{3.5cm}(10.1cm,-1cm)
+  {\footnotesize Curriculum Vitae\\Prepared \today}
+\end{textblock*}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\Large Jordan Creed}\\[.5cm] % was LARGE and [1cm]
+Research Data Analyst II, Department of Cancer Epidemiology\\[.2cm]
+Moffitt Cancer Center\\
+12902 Magnolia Drive, MRC 44\\ 
+Mailstop: MRC-CANCONT\\
+Tampa, FL 33612\\[.2cm] 
+Phone: 813-745-6470\\ 
+Email: \href{mailto:Jordan.H.Creed@moffitt.org}{Jordan.H.Creed@moffitt.org}\\[.2cm]
+%\textsc{url}: \href{http://www.travisgerke.com}{http://www.travisgerke.com}\\
+
+
+%------------------------------------------------
+\vspace{-.3cm}
+
+\section*{Education}
+\years{2015} B.H.S.~(Public Health), University of Florida, Gainesville, FL\\
+\years{2016} M.P.H.~(Biostatistics), University of Florida, Gainesville, FL
+%\years{2017--} Non-degree~(Statistics), University of South Florida, Tampa, FL
+
+\section*{Academic appointments and employment}
+\years{2013-2014}Undergraduate Intern, Maru Diagnostic Imaging Services, Tampa, FL\\
+\years{2014}Undergraduate Intern, The Kyle Practice, Belfast, Northern Ireland, UK\\
+\years{2016}Graduate Intern, Department of Biostatistics, H.\ Lee Moffitt Cancer Center \& Research Institute, Tampa, FL\\
+\years{2016--2018}Research Data Analyst I (Bioinformatics)  , Department of Cancer Epidemiology, H.\ Lee Moffitt Cancer Center \& Research Institute, Tampa, FL\\
+\years{2018--}Research Data Analyst II (Bioinformatics)  , Department of Cancer Epidemiology, H.\ Lee Moffitt Cancer Center \& Research Institute, Tampa, FL\\
+
+%\section*{Teaching}
+
+%\section*{Training}
+
+%\section*{Honors and awards}
+
+%\section*{Research support}
+
+%\section*{Dissertation}
+
+\section*{Service}
+\emph{Moffitt Cancer Center}
+~\\
+\years{2017}Member, Bioinformatics Interest Meeting\\
+\years{2018--}Member, Bio-Data Club\\
+
+\emph{University of Florida}
+~\\
+\years{2013--2015}Member, Health Occupations Students of America\\
+\years{2014--2015}Member,Health Science Students Organization\\
+\years{2014--2016}Secretary, Public Health Students Association\\
+
+\emph{Professional}\\
+%~\\
+\years{2017--2018}Co-Organizer, Tampa Bay R Users Group, Tampa, FL\\
+\years{2018--}Organizer, Tampa Bay R Users Group, Tampa, FL \\
+%\years{2018}Speaker, Great American Teach In, Tampa, FL \\
+%\years{2018}R Meetup Chair, Data Analysis Using R Workshop, Tampa, FL \\
+
+%\section*{Professional association memberships}
+%\years{2011--}Active member, Transdisciplinary Prostate Cancer Partnership (ToPCaP), Boston, MA\\
+
+\section*{Peer-reviewed publications}
+\begin{enumerate}[leftmargin=*]
+
+\item{} Miller B, Peeri NC, Nabors LB, {\bf CreedJH}, Thompson ZJ, Rozmeski CM, LaRocca RV, Chowdhary S, Olson JJ, Thompson RC, Egan KM. Handedness and the risk of glioma. J
+Neurooncol. 2018 May;137(3):639-644. doi: 10.1007/s11060-018-2759-y. Epub 2018
+Jan 13. PubMed PMID: 29332185; PubMed Central PMCID: PMC5924459.
+
+\item{} Peeri NC*, {\bf Creed JH*}, Anic GM, Thompson RC, Olson JJ, LaRocca RV, Chowdhary SA, Brockman JD, Gerke TA, Nabors LB, Egan KM (*co-first authors). Toenail selenium, genetic variation in selenoproteins and risk and outcome in glioma. Cancer Epidemiology 2018; DOI:10.1016/j.canep.2018.02.002
+
+\end{enumerate}
+
+\section*{Preprints}
+\begin{enumerate}[leftmargin=*]
+
+\item{} {\bf Creed JH}, Monteiro AN, Gerke TA. epiTAD: a web application for visualizing high throughput chromosome conformation capture data in the context of genetic epidemiology. bioRxiv 243840. \href{https://www.biorxiv.org/content/early/2018/01/05/243840}{https://www.biorxiv.org/content/early/2018/01/05/243840}
+\end{enumerate}
+
+\section*{Manuscripts In Prep}
+\begin{enumerate}[leftmargin=*]
+
+\item{} {\bf Creed JH*}, Peeri NC*, Anic GM, Thompson RC, Olson JJ, LaRocca RV, Chowdhary SA, Brockman JD, Gerke TA, Nabors LB, Egan KM (*co-first authors). Methylmercury exposure, genetic variation in metabolic enzymes, and the risk of glioma. Scientific Reports.
+
+\item{} {\bf Creed JH}, Nwogu O, Gerke TA. Distribution of effect estimates and p-values estimated from the top medical literature, 2000-2010. 
+
+\item{} {\bf Creed JH}, Berglund AE, Yamoah KJ, Park J, Rounbehler RJ, Cleveland J, Gerke TA. Commercial gene expression tests for prostate cancer prognosis: race specific patterns in expression. 
+
+\end{enumerate}
+
+\section*{Conference presentations}
+
+{\bf Creed JH}, Chi YY, Chen DT. Interactive analysis of cancer genomics and clinical outcomes for the NanoString nCounter platform. In: Public Health Day: 2016 August; Gainesville, FL.\\
+
+{\bf Creed JH}, Gerke T, Monteiro A. EpiTAD Viewer: A Software Application for Visualizing and Contextualizing HI-C Data in Genetic Epidemiology. In: Moffitt Scientific Symposium: 2017 May 4; Tampa, FL. Award: {\bf Population Science Poster Winner.}\\
+
+Gerke T, Tyekucheva S, {\bf Creed JH}, Penney KL, Sinnott JA, Ebot E, Berglund AE, Loda M, Stampfer MJ, Kraft P, Parmigiani G, Mucci LA. All happy families are alike: Transcriptomic homogeneity in indolent prostate tumors is a useful prognostic biomarker. In: Prostate Cancer: Advances in Basic, Translational, and Clinical Research (AACR Special Conference): 2017 Dec 2--5; Orlando, FL. \\
+
+{\bf Creed JH}, Berglund AE, Yamoah KJ, Gerke TA. Ancestry informative eQTLs in prostate tumor tissue: implications for observed cancer disparities. In: USF Health Research Day: 2018 Feb 23; Tampa, FL. \\
+
+Nwogu O, {\bf Creed JH}, Egan KM, Gerke TA. Leveraging eQTL Analysis to Identify Genes Associated with Glioblastoma Multiforme Survival. In: USF Health Research Day: 2018 Feb 23; Tampa, FL. \\
+
+Berglund A, Putney R, {\bf Creed J}, Aden-Buie G, Gerke T, Rounbehler R. Accessible pipeline for translational research using TCGA: Tristetraprolin as an example relating gene mechanism to disease specific outcomes. In: TCGA Legacy: Multi-Omic Studies in Cancer: 2018 Sep 27-29; Washington, DC.\\
+
+Laajala TD, Aden-Buie G, Gerke T, {\bf Creed J}, Berglund A, Stopsack K, Cramer SD, Tyekucheva S, Aittokallio T, Costello JC. Identifying genetic interactions that drive aggressive prostate cancer using an ensemble of penalized Cox regression models.  In: AACR Convergence: Artificial Intelligence, Big Data, and Prediction in Cancer: 2018 Oct 14-17; Newport, RI.
+
+\section*{Conferences and Workshops}
+
+\years{2018} Frontiers in Statistics: Data Science across Disciplines. University of South Florida, Tampa, FL. Health Science Chair. \\
+\years{2018} Data Analysis Using R. University of South Florida, Tampa, FL. R Meetup Chair \\ 
+\years{2019} Intermediate Shiny Workshop. rstudio::conf January 15-16;  Austin, Tx.  \\
+
+\section*{Presentations and Talks}
+
+\years{2018} Introduction to Shiny. In: R Meetup Tampa: 2018 March 29; Tampa, FL.\\
+\years{2018} Introduction to R. In: Data Analysis Using R: 2018 November 5; Tampa, FL. \\
+\years{2018} Improving reproducible research with shiny. In: Data Analysis Using R: 2018 November 9; Tampa, FL. \\
+
+
+%\years{2018} Introduction to shiny. In: R Meetup Tampa: 2018 March 29; Tampa, FL.
+
+%\section*{Invited seminars}
+%\years{2009}A method for resolving ties in asymptotic relative efficiency. Undergraduate Research Symposium, University of Florida.\\
+
+\section*{Software development}
+
+{\bf Creed JH}, Monteiro AN, Gerke TA. \verb|epiTAD|: A web application for visualizing high throughput chromosome conformation capture data in the context of genetic epidemiology, \href{https://apps.gerkelab.com/epiTAD/}{https://apps.gerkelab.com/epiTAD/}. R Shiny Application 2018; latest development version \href{https://github.com/GerkeLab/epiTAD}{https://github.com/GerkeLab/epiTAD}.\\
+
+{\bf Creed JH}, Gerke TA. \verb|ShinyDAG|: A web application for building, analyzing, and visualizing directed acyclic graphs (DAGs), \href{https://apps.gerkelab.com/shinyDAG/}{https://apps.gerkelab.com/shinyDAG/}. R Shiny Application 2018; latest development version \href{https://github.com/GerkeLab/ShinyDAG}{https://github.com/GerkeLab/ShinyDAG}.
+
+\section*{Awards}
+
+\years{2018} rstudio::conf Diversity Scholarship
+
+%Barr CD, {\bf Gerke TA}, Diez DM. \verb|voronoi|: Methods and applications related to Voronoi tessellations. R package 2011; version 1.0.
+
+\section*{Other education}
+
+Principles of Molecular Medicine : 2017 Aug 21 - Dec 4; Department of , University of South Florida, Tampa, FL\\
+
+Applied Bioinformatics : 2017 Aug 22 - Dec 5; Department of , University of South Florida, Tampa, Fl \\
+
+Genome Data Analysis Course:  2017 Sept 20 - Nov 15; Department of Bioinformatics, Moffitt Cancer Center, Tampa, FL \\
+
+Special Topics in Statistics :  2018 Jan 17 -  May 2; Department of Mathematics and Statistics, University of South Florida, Tampa, FL
+%ers in Causal Inference Workshop: 2012 March 23-24; Harvard University, Cambridge, MA.\\
+
+
+
+%------------------------------------------------
+
+%\vfill{} % Whitespace before final footer
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+%\begin{center}
+%{\scriptsize Last updated: \today\- \- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+%\end{center}
+%----------------------------------------------------------------------------------------
+
+\end{document}
