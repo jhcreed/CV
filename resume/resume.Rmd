@@ -1,0 +1,216 @@
+---
+#name: Jordan  
+surname: Jordan H. Creed, MPH
+position: "data analyst"
+address: "H. Lee Moffitt Cancer Center & Research Institute, 12902 Magnolia Drive, Tampa, FL 33612"
+phone: +1 813 833 0887
+#www: none.com
+email: "Jordan.H.Creed@moffitt.org"
+#twitter: jhcreed
+googlescholar: 8k9Atw8AAAAJ
+github: jhcreed
+headcolor: 5600B3
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# Professional Experience
+
+\emph{Summary:} As a data analyst, I serve in overlapping roles concerning epidemiology, biostatistics and data science. My career gives me opportunities to author papers, design posters and present at conferences. I also help to develop several scientific software projects. 
+
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "Research Data Analyst II (Bioinformatics)", "2016--present", "H. Lee Moffitt Cancer Center & Research Institute", "Tampa, FL", "Improve reproducible research in the scientific community by developing R packages and web applications utilizing modern epidemiological and statistical methods"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-1.1cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+    "", "", "", "", "Manage large data resources (>12TB), conduct statistical analyses in R, SAS and Python, and author and assist with manuscript creation",
+  "", "", "", "", "Maintain GitHub lab and organization pages for large multi-institutional teams and projects for version control, bug/feature tracking and organizing project workflow",
+  "Graduate Intern, Department of Biostatistics", "2016", "", "", "Developed a Shiny application that enable basic scientists and non-programmers to rapidly visualize and analyze Nanostring nCounter data",
+  "Graduate Assistant", "2020--present", "University of South Florida", "Tampa, FL", "Design and develop a mobile phone application using React Native to help adolescents manage asthma and monitor symptoms"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+# Education
+
+\emph{Summary:} I studied as a biostatistician and am currently enrolled in the Epidemiology PhD program at the University of South Florida. I use my schooling as an opportunity to learn new programming and analysis skills and to improve my communication skills. 
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Master of Public Health (MPH), Biostatistics", "2016", "University of Florida", "Gainesville, FL",
+  "Bachelor of  Health Science (BHS), Public Health", "2015", "University of Florida", "Gainesville, FL"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Software Development
+
+\emph{Summary:} While I predominantly consider myself an R programmer, I am also familiar with other common statistical languages such as SAS and Python. I have a passion for reproducible research and  champion the use of git/GitHub and version control in projects. 
+
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "epiTAD", "", "Shiny Application", "", "A web application for visualizing high throughput chromosome conformation capture data in the context of genetic epidemiology,"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-1.1cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Utilized multiple APIs to combined genomic data and annotations for a region and provide comprehensive visualization of potential interactions between indivdual elements"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-0.5cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "ShinyDAG", "", "", "", "A web application for building, analyzing, and visualizing directed acyclic graphs (DAGs)"
+) %>%
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-1.1cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Integrated R and Latex for designing high quality time-ordered diagrams and implemented a graphical user interface for easy point-and-click creation",
+  "mediator", "", "R package", "", "An R package for conducting causal mediation analyses in a tidyverse-compatible framework"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-1.1cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Implemented computationally intensive calculations while maximizing efficiency"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-0.5cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "curatedPCaData", "", "", "", "An R package of curated publically available Prostate Cancer datasets"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-1.1cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Harmonized -omic data and created unified annotations from various databases into an open-source centralized data repository",
+  "MatSurv", "", "MatLab", "", "Survival analysis and visualization in MatLab",
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-1.1cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Evaluated the implementation of similar statistical methods across SAS, R and MATLAB"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+# Training, workshops and teaching 
+
+\emph{Summary:} I have worked with and learned from many great programmers and academics and have attempted to take every chance to share my knowledge with those in my community in the hopes of creating better tools and ideas to keep science moving forward. 
+
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, 
+  "", "", "Tampa Bay R Users - Organizer", "", 
+) %>% 
+  detailed_entries(Position, Year, Institution, Where)
+```
+
+\vspace{-1.9cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Facilitate meeting spaces with local businesses and elicit speakers and activities",
+  "", "", "", "", "Meet monthly with a group of data scientists in the Tampa Bay Area to dicuss R and learn from each other"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+
+\vspace{-0.5cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where,
+  "", "", "Tampa R Ladies - Member", "", 
+) %>% 
+  detailed_entries(Position, Year, Institution, Where)
+```
+
+\vspace{-1.9cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Provide support for women who use R and create an environment for women to take the lead in a field traditionally dominated by men while also learning R programming"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-0.5cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where,
+  "", "", "Moffitt BioData Club - Member", "", 
+) %>% 
+  detailed_entries(Position, Year, Institution, Where)
+```
+
+\vspace{-1.9cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Teach novel scientific computing methods and skills in a cancer-centered context",
+  "", "", "", "", "Sponsor a two-day hackathon for the local community to foster teaching and relationships across various disciplines and skill levels"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
+\vspace{-0.5cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where,
+  "", "", "Data Analysis using R - Instructor", "", 
+) %>% 
+  detailed_entries(Position, Year, Institution, Where)
+```
+
+\vspace{-1.9cm}
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Institution, ~ Where, ~Why,
+  "", "", "", "", "Organized a five day workshop to teach undergraduate and graduate students the basics of using R for statistical analysis",
+  "", "", "", "", "Taught mulitple session covering topics of R, Shiny and the fundamentals of reproducible research",
+) %>% 
+  detailed_entries(Position, Year, Institution, Where, Why)
+```
+
